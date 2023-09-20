@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'MoneyTracks', type: :request do
   let(:user) { User.create(name: 'Marc') }
-  let(:group) { Group.create(name: 'Fast Food', icon: 'http//', user: user) }
+  let(:group) { Group.create(name: 'Fast Food', icon: 'http//', user:) }
 
   describe 'GET /new' do
     before { get new_group_money_track_path(group_id: group.id) }

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Groups', type: :request do
@@ -24,8 +26,8 @@ RSpec.describe 'Groups', type: :request do
   end
 
   describe 'GET /show' do
-    let(:user) { User.create(name: 'Marc')}
-    let(:group) { Group.create(name: 'Fast Food', icon: 'http//', user: user) }
+    let(:user) { User.create(name: 'Marc') }
+    let(:group) { Group.create(name: 'Fast Food', icon: 'http//', user:) }
 
     before do
       get group_path(group.id)
