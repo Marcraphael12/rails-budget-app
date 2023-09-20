@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  root "groups#index", as: "moneytrack"
+
+  resources :groups, only: [:new, :show, :create] do
+    resources :money_tracks, only: [:new, :show, :create]
+  end
 end
