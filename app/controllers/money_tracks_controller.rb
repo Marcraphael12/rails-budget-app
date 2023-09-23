@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MoneyTracksController < ApplicationController
   def new
     # @group_id = group_id
@@ -17,8 +19,8 @@ class MoneyTracksController < ApplicationController
     # method raises a `RecordInvalid` exception, the code will redirect the user back to the `new`
     # action with the `group_id` parameter, allowing them to correct any validation errors and try
     # again.
-    rescue ActiveRecord::RecordInvalid
-    render :new, group_id: group_id
+  rescue ActiveRecord::RecordInvalid
+    render :new, group_id:
   end
 
   private
