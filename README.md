@@ -31,7 +31,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 PennyWise <a name="about-project"></a>
+# 📖 Money Track <a name="about-project"></a>
 Money track is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -146,8 +146,8 @@ To run tests, run the following command:
 👤 **Emmanuella Adu**
 
 - GitHub: [@Marcraphael12](https://github.com/Marcraphael12)
-- Twitter: [@elarh\_](https://twitter.com/elarh_)
-- LinkedIn: [Emmanuella Adu](https://linkedin.com/in/emmanuella-adu)
+- Twitter: [@MarcRaphael20](https://twitter.com/MarcRaphael20)
+- LinkedIn: [Marc Raphael](http://linkedin.com/in/marc-raphael-326039204)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
