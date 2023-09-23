@@ -1,15 +1,16 @@
-# frozen_string_literal: true
-
 Rails.application.routes.draw do
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  unauthenticated do
+    root "users#home"
+  end
 
-  root 'groups#index', as: 'moneytrack'
+  root "groups#index", as: "moneytrack"
 
-  resources :groups, only: %i[new show create] do
-    resources :money_tracks, only: %i[new show create]
+  resources :groups, only: [:new, :show, :create] do
+    resources :money_tracks, only: [:new, :show, :create]
   end
 end
+
+
+
