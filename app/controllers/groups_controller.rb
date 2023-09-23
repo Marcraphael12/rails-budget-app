@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class GroupController < ApplicationRecord
+class GroupsController < ApplicationRecord
   # Actions
   def new
     @group = Goup.new
@@ -26,6 +26,8 @@ class GroupController < ApplicationRecord
       render :new
     end
   end
+
+  private
 
   # Params
   def required_params

@@ -1,16 +1,16 @@
-# frozen_string_literal: true
-
 class MoneyTracksController < ApplicationController
-  # actions
   def new
+    # @group_id = group_id
     @group = Group.find(params[:group_id])
+
     @money_track = MoneyTrack.new
   end
 
   def create
     @group = Group.find(group_id)
     @money_track = @group.add_money_track(required_params)
-  
+    redirect_to @group
+
     # `rescue ActiveRecord::RecordInvalid` is a rescue clause that is used to handle an exception of
     # type `ActiveRecord::RecordInvalid`. This exception is raised when a record fails validation and
     # cannot be saved to the database. In this case, if the `@group.add_money_track(required_params)`
@@ -19,7 +19,6 @@ class MoneyTracksController < ApplicationController
     # again.
     rescue ActiveRecord::RecordInvalid
     render :new, group_id: group_id
-    redirect_to @group
   end
 
   private
