@@ -1,7 +1,4 @@
-# frozen_string_literal: true
-
-class UsersConstroller < ApplicationRecord
-  # actions
+class UsersController < ApplicationController
   def home; end
 
   def new
