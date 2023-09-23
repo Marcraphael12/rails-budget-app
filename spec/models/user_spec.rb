@@ -1,9 +1,7 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  let(:user) { User.new(name: 'Marc') }
+  let(:user) { User.new(name: 'Polina', email: 'polina@mail.com', password: '123456') }
 
   before { user.save }
 
@@ -19,14 +17,36 @@ RSpec.describe User, type: :model do
       end
     end
 
-    it 'name should be present' do
-      user.name = nil
-      expect(user).to_not be_valid
-    end
+    context 'with wrong parameters' do
+      it 'name should be present' do
+        user.name = nil
+        expect(user).to_not be_valid
+      end
 
-    it 'name should not be too long' do
-      user.name = 'A very long name is not admitted in our app'
-      expect(user).to_not be_valid
+      it 'email should be present' do
+        user.email = nil
+        expect(user).to_not be_valid
+      end
+
+      it 'email should be present' do
+        user.password = nil
+        expect(user).to_not be_valid
+      end
+
+      it 'name should not be too long' do
+        user.name = 'Polina' * 10
+        expect(user).to_not be_valid
+      end
+
+      it 'email should not be too long' do
+        user.email = 'polina.stamenova@mail.com' * 20
+        expect(user).to_not be_valid
+      end
+
+      it 'password should not be too long' do
+        user.password = 'mysicretpassword' * 10
+        expect(user).to_not be_valid
+      end
     end
   end
 end
