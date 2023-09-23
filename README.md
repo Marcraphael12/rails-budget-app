@@ -146,8 +146,8 @@ To run tests, run the following command:
 👤 **Emmanuella Adu**
 
 - GitHub: [@Marcraphael12](https://github.com/Marcraphael12)
-- Twitter: [@elarh\_](https://twitter.com/elarh_)
-- LinkedIn: [Emmanuella Adu](https://linkedin.com/in/emmanuella-adu)
+- Twitter: [@MarcRaphael20](https://twitter.com/MarcRaphael20)
+- LinkedIn: [Marc Raphael](http://linkedin.com/in/marc-raphael-326039204)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
