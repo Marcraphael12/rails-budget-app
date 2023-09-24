@@ -85,6 +85,8 @@ test:
 #
 production:
   <<: *default
-  database: Project_production
-  username: Project
+  database: budget_app_production
+  username: 'postgres'
+
+
   password: <%= ENV["PROJECT_DATABASE_PASSWORD"] %>
