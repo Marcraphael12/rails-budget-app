@@ -2,9 +2,7 @@
 
 class MoneyTracksController < ApplicationController
   def new
-    # @group_id = group_id
     @group = Group.find(params[:group_id])
-
     @money_track = MoneyTrack.new
   end
 
@@ -20,7 +18,7 @@ class MoneyTracksController < ApplicationController
     # action with the `group_id` parameter, allowing them to correct any validation errors and try
     # again.
   rescue ActiveRecord::RecordInvalid
-    render :new, group_id:
+    render :new, group_id: group_id
   end
 
   private
