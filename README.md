@@ -64,7 +64,7 @@ Money track is a mobile web application where you can manage your budget: you ha
 
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
-[Money Track](https://murmuring-river-52663.herokuapp.com/)
+[Money Track](https://budget-money-trck.onrender.com)
 [Money Track Video Demo](https://www.loom.com/share/9db510ba3fcf4347a06bb2dc86849801a)
 
 
