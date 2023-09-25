@@ -64,7 +64,7 @@ Money track is a mobile web application where you can manage your budget: you ha
 
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
-[Money Track](https://budget-money-trck.onrender.com)
+[Money Track](https://money-budget-app.onrender.com)
 [Money Track Video Demo](https://drive.google.com/file/d/1Ju6waSdrmIK1nrjlbSNv4R3DrVrH1fGx/view?usp=drive_link)
 
 
