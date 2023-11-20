@@ -1,7 +1,11 @@
 <nav class = "nav-top-two">
-    <a href="/"><i class="fas fa-home" aria-hidden="true"></i></a>
+    <a href="/">
+        home
+        <i class="fas fa-home" aria-hidden="true"></i>
+    </a>
     <p id= "no-padding">CATEGORIES</p>
-    <%= link_to destroy_user_session_path, method: :delete, class: "links" do %>
+    <%= link_to new_user_session_path, method: :delete, class: "links" do %>
+        sign out
         <i class="fas fa-sign-out-alt"></i>
     <% end %>
 </nav>
@@ -26,8 +30,3 @@
 <div class="green-field">
     <%= button_to "CREATE", new_group_path, class: "green-button", method: "get" %>
 </div>
-
-
-
-
-
